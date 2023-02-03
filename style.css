@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --mainOrange: #f48840;
+  --mainGray: #7a7a7a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.active {
+  color: var(--mainOrange);
+}
+
+nav {
+  background-color: #eeee;
+  padding: 1.5rem 0;
+  height: 12vh;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar_contant {
+  width: 80%;
+  color: black;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_contant > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar_contant > ul > li {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.navbar_contant > ul > li:hover {
+  color: var(--mainOrange);
+}
+
+.menu {
+  font-size: 2rem;
+  background-color: var(--mainOrange);
+  padding: 5px 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.blog_container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.blog {
+  position: relative;
+  height: 400px;
+  flex-grow: 1;
+}
+
+.blog > img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog_info {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1rem 2rem 1rem;
+  color: white;
+}
+
+.creative_section {
+  background-image: url(https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/cta-bg.jpg);
+  height: 180px;
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.creative_container {
+  width: 80%;
+}
+
+.creative_container > h3 {
+  margin: 3rem 2rem 1.5rem;
+  color: var(--mainOrange);
+}
+
+.creative_container > h2 {
+  margin: 0 2rem 0;
+  color: white;
+}
+
+.creative_section > button {
+  width: 150px;
+  height: 50px;
+  margin-top: 4rem;
+  background-color: var(--mainOrange);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.stand_section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.lifestyle_container {
+  width: 70%;
+}
+
+.lifestyle {
+  border: 1px solid lightgray;
+  width: 100%;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.lifestyle > img {
+  width: 100%;
+}
+
+.lifestyle > h4 {
+  color: var(--mainOrange);
+  margin: 1.5rem 3rem 0.5rem;
+}
+
+.lifestyle > h2 {
+  margin: 0 3rem 0.5rem;
+}
+
+.lifestyle > p {
+  margin: 0 3rem 0.5rem;
+  color: var(--mainGray);
+}
+
+.info {
+  border: 0.5px solid var(--mainGray);
+  width: 87%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beauty {
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+  gap: 0.5rem;
+}
+
+.facebook {
+  display: flex;
+  align-items: center;
+  margin: 1rem 3rem;
+  gap: 0.5rem;
+}
+
+.lifestyle_container > button {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: var(--mainOrange);
+  border: none;
+  color: white;
+}
+
+.recent {
+  width: 30%;
+}
+
+.recent > input {
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.recent > h4 {
+  color: rgb(165, 156, 156);
+}
+
+.tag {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.item {
+  border: 1px solid var(--mainGray);
+  margin: 0.5rem;
+  padding: 8px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: var(--mainOrange);
+}
+
+footer {
+  height: 80px;
+  background-color: #f48840;
+}
+
+footer > p {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav {
+    width: 80%;
+  }
+
+  .navbar_contant > ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .creative_section {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 0.6rem;
+  }
+  .creative_container {
+    font-size: 0.7rem;
+  }
+
+  .creative_section > button {
+    width: 100%;
+  }
+
+  .stand_section {
+    flex-direction: column;
+  }
+
+  .lifestyle_container,
+  .recent {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .icon {
+    justify-content: space-around;
+  }
+}
